@@ -1,4 +1,4 @@
-/* Style for the WQI information section */
+
 .wqi-info {
     background-color: #f8f8f8;
     padding: 20px;
@@ -31,7 +31,7 @@
     color: #0c0c0c;
 }
 
-/* Style for the entire data section */
+
 .data {
     display: flex;
     justify-content: space-around;
@@ -44,7 +44,7 @@
 
 }
 
-/* Style for the WQI section */
+
 .wqi {
     text-align: center;
 }
@@ -57,14 +57,14 @@
 
 .wqi-value {
     font-size: 36px;
-    color:#3e28e4; /* Blue color for WQI value */
+    color:#3e28e4; 
     font-weight: bold;
 }
 
 .wqi-status {
     font-size: 18px;
     font-weight: bold;
-    color: #3e28e4; /* Blue color for WQI status */
+    color: #3e28e4;
 }
-/* Style the ul tag within the wqi-info section */
+
 
