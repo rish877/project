@@ -1,0 +1,212 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Set a background color and font for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding-top: 80px;
+}
+
+/* Style the header */
+header {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 0;
+   
+    text-align: left ;
+  
+     position: fixed;
+     top: 0;
+     left: 0;
+     
+   
+     width: 100%;
+      
+     z-index: 1000; 
+     box-shadow: 3px 10px 10px rgb(21, 182, 226);
+     justify-content: space-between; 
+    align-items: center;
+    
+  
+   
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-flex;
+    margin-right: 25px;
+   
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the banner section */
+.banner {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    /* box-shadow: 0px 0px 10px  #3809d3; */
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Style the data section */
+.data {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 40px #1fe0d4;
+}
+
+.aqi, .wqi {
+    text-align: center;
+}
+
+.aqi h2, .wqi h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.aqi-value, .wqi-value {
+    font-size: 36px;
+    color: #ff5733; /* Red for AQI and Green for WQI */
+}
+
+.aqi-status, .wqi-status {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1280c3;
+}
+
+/* Style the quick links */
+.quick-links {
+    text-align: center;
+    padding: 20px;
+}
+
+.quick-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #1877cf;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.quick-links a:hover {
+    background-color: #555;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content ul {
+    list-style-type: none;
+}
+
+.footer-content li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    header nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .data {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+#search-form {
+    
+    margin-right: 20px; 
+    
+        float: right;
+        margin-top: 0px; 
+    
+}
+
+#search-input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #1fe0d4; 
+}
+
+#search-form button {
+    background-color: #7519c6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #1280c3; 
+}
+

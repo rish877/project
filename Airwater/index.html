@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Environment Monitoring</title>
+</head>
+<body>
+   
+    <header>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+        <nav>
+            <!-- <div class="logo">
+                <img src="" alt="Website Logo"> -->
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">AQI</a></li>
+                <li><a href="#">WQI</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <img src="https://c4.wallpaperflare.com/wallpaper/702/55/760/abstract-science-fire-water-earth-nature-air-elements-wallpaper-preview.jpg" alt="Clean Environment">
+        <h1>Monitoring Air and Water Quality</h1>
+        <p>Stay Informed About Your Environment</p>
+    </section>
+
+    <section class="data">
+        <div class="aqi">
+            <h2>Air Quality Index (AQI)</h2>
+            <p>Current AQI: <span class="aqi-value"></span></p>
+            <p>Status: <span class="aqi-status"></span></p>
+        </div>
+
+        <div class="wqi">
+            <h2>Water Quality Index (WQI)</h2>
+            <p>Current WQI: <span class="wqi-value"></span></p>
+            <p>Status: <span class="wqi-status"></span></p>
+        </div>
+    </section>
+
+    <section class="quick-links">
+        <a href="a.html">Detailed AQI Information</a>
+        <a href="b.html">Detailed WQI Information</a>
+        <a href="c.html">Report Pollution</a>
+        <a href="#">Request Assistance</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Environment Monitoring</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        const randomAqi = getRandomInt(0, 500);
+        document.querySelector(".aqi-value").textContent = randomAqi;
+
+        let aqiStatus;
+        if (randomAqi >= 0 && randomAqi <= 50) {
+            aqiStatus = "Good";
+        } else if (randomAqi <= 100) {
+            aqiStatus = "Moderate";
+        } else if (randomAqi <= 150) {
+            aqiStatus = "Unhealthy for Sensitive Groups";
+        } else if (randomAqi <= 200) {
+            aqiStatus = "Unhealthy";
+        } else if (randomAqi <= 300) {
+            aqiStatus = "Very Unhealthy";
+        } else {
+            aqiStatus = "dangerous";
+        }
+        document.querySelector(".aqi-status").textContent = aqiStatus;
+
+        // Generate random WQI value between 0 and 500
+        const randomWqi = getRandomInt(0, 500);
+        document.querySelector(".wqi-value").textContent = randomWqi;
+
+        // Categorize WQI based on the value
+        let wqiStatus;
+        if (randomWqi >= 0 && randomWqi <= 50) {
+            wqiStatus = "Good";
+        } else if (randomWqi <= 100) {
+            wqiStatus = "Moderate";
+        } else if (randomWqi <= 150) {
+            wqiStatus = "Unhealthy for Sensitive Groups";
+        } else if (randomWqi <= 200) {
+            wqiStatus = "Unhealthy";
+        } else if (randomWqi <= 300) {
+            wqiStatus = "Very Unhealthy";
+        } else {
+            wqiStatus = "dangerous";
+        }
+        document.querySelector(".wqi-status").textContent = wqiStatus;
+    </script>
+</body>
+</html>
